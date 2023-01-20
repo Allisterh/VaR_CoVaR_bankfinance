@@ -1,60 +1,68 @@
 This is my project concerning bankfinance.
 
-主要的程序代码和数据见作者GitHub上的bankfinance项目：
+This is my project concerning bank finance.
+
+The main program code and data can be found in the author's bankfinance project on GitHub:
 https://github.com/shenciyou/bankfinance
 
-详细的软件操作和代码整合见项目操作手册文档：manual.docx
+For detailed software operation and code integration, see the project operation manual document: manual.docx
 
-主要的代码列表如下：
-第三章 系统性风险的测度
-1、DD的计算
-（1）code_for_DD.do
-（2）KMVfun.m
-（3）KMVOptSearch.m
-（4）KMV.m
-2、PDD的计算
-（1）sigmaP_solver.do
-（2）pdd_generator.do
-3、LRSQ的计算
-（1）lrsq_generator.do
-4、△CoVaR的计算
-（1）deltacovar_generator.do
-5、静态MES的计算
-（1）static_mes.txt
-6、动态MES的计算
-（1）dynamic_mes.txt
-7、描述性统计
-（1）descriptive_stat.txt
+The main code list is as follows:
+Chapter III Measurement of Systemic Risk
+1. Calculation of DD
+(1) code_for_DD.do
+(2) KMVfun.m
+(3) KMVOptSearch.m
+(4) KMV.m
 
-第四章 系统性风险传染研究
-1、银行间双边风险敞口矩阵X的计算
-（1）lingo.txt
-2、银行间风险传染仿真
-（1）BankDownFun.m
-（2）riskcontagion.m
+2. Calculation of PDD
+(1) sigmaP_solver.do
+(2) pdd_generator.do
 
-第五章 系统重要性银行识别
-1、基于SES衍生的SRISK相对系统重要性银行识别
-（1）srisk.txt
-2、基于熵值指标法的系统重要性银行识别
-（1）dsibs.txt（包含熵值法过程核心函数entropy_method.m）
+3. Calculation of LRSQ
+(1) lrsq_generator.do
 
-第六章 系统性风险的影响因素
-1、银行竞争
-（1）code_for_comp.txt
-2、货币政策
-（1）code_for_mp.txt
-3、面板合成
-（1）code_for_combine.txt
-4、回归分析
-（1）code_for_xtreg.txt
+4. Calculation of 鈻矯oVaR
+(1) deltacovar_generator.do
 
-第七章 基于DSGE模型的宏观审慎政策和货币政策的协调
-1、Dynare工具箱的MOD文件
-（1）macrodata_dynare.mod
-2、Matlab对Dynare文件的调用
-（1）dynarecall.m
-3、Matlab数据预处理模块
-（1）macrodata_input.m
-4、Matlab冲击光滑估计及脉冲响应值输出模块
-（1）macrodata_output.m
+5. Calculation of static MES
+(1) static_mes.txt
+
+6. Calculation of dynamic MES
+(1) dynamic_mes.txt
+
+7. Descriptive statistics
+(1) descriptive_stat.txt
+
+Chapter IV Research on Systemic Risk Contagion
+1. Calculation of inter-bank bilateral risk exposure matrix X
+(1) lingo.txt
+2. Simulation of inter-bank risk contagion
+(1) BankDownFun.m
+(2) riskcontagion.m
+
+Chapter V Identification of Systemically Important Banks
+1. Identification of relative systemically important banks based on SRISK derived from SES
+(1) srisk.txt
+2. Identification of systemically important banks based on the entropy index method
+(1) dsibs.txt (including the core function entropy_method.m of the entropy method process)
+
+Chapter 6 Influencing Factors of Systemic Risk
+1. Bank competition
+(1) code_for_comp.txt
+2. Monetary policy
+(1) code_for_mp.txt
+3. Panel synthesis
+(1) code_for_combine.txt
+4. Regression analysis
+(1) code_for_xtreg.txt
+
+Chapter 7 Coordination of Macro-prudential Policy and Monetary Policy Based on DSGE Model
+1. MOD file of Dynare toolbox
+(1) macrodata_dynare.mod
+2. Matlab calls Dynare files
+(1) Dynarecall.m
+3. Matlab data preprocessing module
+(1) macrodata_input.m
+4. Matlab impact smooth estimation and impulse response value output module
+(1) macrodata_output.m
